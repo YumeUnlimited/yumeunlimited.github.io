@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-labelledby="title desc">
+  <title id="title">Yume Unlimited mark</title>
+  <desc id="desc">A circular mark with a game screen, play symbol, and orbit path.</desc>
+  <defs>
+    <linearGradient id="markGradient" x1="18" y1="10" x2="78" y2="86" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#d9644a"/>
+      <stop offset=".54" stop-color="#d7a743"/>
+      <stop offset="1" stop-color="#1d7f78"/>
+    </linearGradient>
+  </defs>
+  <circle cx="48" cy="48" r="44" fill="#10212a"/>
+  <rect x="24" y="24" width="48" height="35" rx="6" fill="none" stroke="url(#markGradient)" stroke-width="7"/>
+  <path d="M43 33l17 8.8-17 8.8z" fill="#f8f5ef"/>
+  <path d="M27 69c10.5-7 20.1-10.5 28.8-10.5 7.4 0 13.9 2.4 19.2 7.1" fill="none" stroke="#f8f5ef" stroke-width="7" stroke-linecap="round" opacity=".92"/>
+  <circle cx="70" cy="68" r="5" fill="#d7a743"/>
+</svg>
