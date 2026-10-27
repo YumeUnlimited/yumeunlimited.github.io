@@ -1,221 +1,400 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Yume Unlimited</title>
-    <meta
-      name="description"
-      content="Yume Unlimited is a Japan-based PC game development and consulting company."
-    >
-    <meta name="theme-color" content="#0d1f2d">
-    <meta property="og:title" content="Yume Unlimited">
-    <meta
-      property="og:description"
-      content="PC game development, prototypes, production support, and consulting for teams building playable worlds."
-    >
-    <meta property="og:type" content="website">
-    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-    <link rel="preload" href="assets/hero-visual.svg" as="image" type="image/svg+xml">
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    <a class="skip-link" href="#main">Skip to content</a>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Yume Unlimited is a small PC game studio. Now developing Burger Factory Simulator, and co-developer of Bookshop Simulator with Blep Games.">
+  <meta name="theme-color" content="#151133">
+  <link rel="canonical" href="https://yumeunlimited.com/">
+  <!-- Language versions: English at /, Japanese at /ja/ -->
+  <link rel="alternate" hreflang="en" href="https://yumeunlimited.com/">
+  <link rel="alternate" hreflang="ja" href="https://yumeunlimited.com/ja/">
+  <link rel="alternate" hreflang="x-default" href="https://yumeunlimited.com/">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <!-- Open Graph / Twitter — controls how the page looks when its link is shared -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Yume Unlimited">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="ja_JP">
+  <meta property="og:title" content="Yume Unlimited | Game Studio">
+  <meta property="og:description" content="Now in development: Burger Factory Simulator. Start with a spatula. End with a factory.">
+  <meta property="og:url" content="https://yumeunlimited.com/">
+  <meta property="og:image" content="https://yumeunlimited.com/assets/burger-keyart.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Yume Unlimited | Game Studio">
+  <meta name="twitter:description" content="Now in development: Burger Factory Simulator. Start with a spatula. End with a factory.">
+  <meta name="twitter:image" content="https://yumeunlimited.com/assets/burger-keyart.jpg">
+  <title>Yume Unlimited | Game Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700;900&family=Noto+Sans+JP:wght@400;500;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-    <header class="site-header" data-header>
-      <nav class="nav" aria-label="Primary navigation">
-        <a class="brand" href="#top" aria-label="Yume Unlimited home">
-          <img src="assets/yume-symbol.svg" alt="" width="42" height="42">
-          <span>
-            <strong>Yume Unlimited</strong>
-            <small>PC game development</small>
-          </span>
-        </a>
+  <a href="#top" class="skip-link">Skip to content</a>
 
-        <button class="nav-toggle" type="button" aria-controls="nav-menu" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span></span>
-          <span></span>
-          <span></span>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-sparkle" viewBox="0 0 24 24"><path d="M12 0C12.6 7 17 11.4 24 12 17 12.6 12.6 17 12 24 11.4 17 7 12.6 0 12 7 11.4 11.4 7 12 0Z"/></symbol>
+    <symbol id="i-steam" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-9.96 9.14l5.36 2.22a2.8 2.8 0 0 1 1.6-.5h.16l2.39-3.46v-.05a3.78 3.78 0 1 1 3.78 3.78h-.09l-3.4 2.43v.13a2.84 2.84 0 0 1-5.62.57L2.38 14.7A10 10 0 1 0 12 2Zm-4.73 15.2-1.23-.51a2.13 2.13 0 1 0 1.17-2.9l1.27.53a1.57 1.57 0 1 1-1.2 2.89Zm9.46-7.77a2.52 2.52 0 1 0-2.52 2.52 2.52 2.52 0 0 0 2.52-2.52Zm-4.4 0a1.89 1.89 0 1 1 1.89 1.89 1.89 1.89 0 0 1-1.9-1.89Z"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path fill="currentColor" d="M12 21s-7.5-4.6-9.6-9.3C.9 8.3 3 4.5 6.7 4.5c2.1 0 3.6 1.1 4.3 2.4h2c.7-1.3 2.2-2.4 4.3-2.4 3.7 0 5.8 3.8 4.3 7.2C19.5 16.4 12 21 12 21Z"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3Z"/></g></symbol>
+  </svg>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#top" class="logo-link">
+        <img src="assets/yume-logo-ondark.png" alt="Yume Unlimited" width="229" height="46" decoding="async">
+      </a>
+      <div class="header-right">
+        <nav id="site-nav" class="site-nav">
+          <a href="#games">Games</a>
+          <a href="#studio">Studio</a>
+          <a href="#about">Company</a>
+          <a href="#contact">Contact</a>
+          <a href="https://store.steampowered.com/app/4966970/Burger_Factory_Simulator/" target="_blank" rel="noopener" class="btn btn--grad">
+            <svg aria-hidden="true"><use href="#i-heart"/></svg><span>Wishlist</span>
+          </a>
+        </nav>
+        <label class="lang-switch">
+          <svg aria-hidden="true"><use href="#i-globe"/></svg>
+          <select id="lang-select" aria-label="Language / 言語">
+            <option value="./" selected>English</option>
+            <option value="ja/" lang="ja">日本語</option>
+          </select>
+        </label>
+        <button class="nav-toggle" type="button" aria-label="Open menu" aria-controls="site-nav" aria-expanded="false">
+          <span></span><span></span><span></span>
         </button>
+      </div>
+    </div>
+  </header>
 
-        <div class="nav-menu" id="nav-menu" data-nav-menu>
-          <a href="#services">Services</a>
-          <a href="#approach">Approach</a>
-          <a href="#company">Company</a>
-          <a class="nav-cta" href="#contact">Contact</a>
-          <a class="lang-switch" href="ja.html" lang="ja">Japanese</a>
+  <main id="top">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-moon" aria-hidden="true">
+        <div class="glow"></div>
+        <svg viewBox="0 0 100 100" width="100%" height="100%">
+          <defs>
+            <linearGradient id="moon-g" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#c7a6ff"/>
+              <stop offset="1" stop-color="#8fa4ff"/>
+            </linearGradient>
+          </defs>
+          <path d="M45.3 14.3 A38 38 0 1 0 84.9 67.1 A33 33 0 0 1 45.3 14.3 Z" fill="none" stroke="url(#moon-g)" stroke-width="2" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <svg class="sparkle s1" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-sparkle"/></svg>
+      <svg class="sparkle s2" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-sparkle"/></svg>
+      <svg class="sparkle s3" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-sparkle"/></svg>
+      <svg class="sparkle s4" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-sparkle"/></svg>
+
+      <div class="hero-content">
+        <div class="hero-intro">
+          <div class="eyebrow">INDIE GAME STUDIO</div>
+          <h1><span class="phrase">Dreams know</span> <span class="phrase grad-text">no limits.</span></h1>
+          <p>We’re a small team making games for PC. <br>Carefully crafted, high-quality games for every kind of player.</p>
         </div>
-      </nav>
-    </header>
 
-    <main id="main">
-      <section class="hero" id="top" aria-labelledby="hero-title">
-        <div class="hero-media" aria-hidden="true"></div>
-        <div class="hero-inner">
-          <p class="eyebrow">PC game development &amp; consulting</p>
-          <h1 id="hero-title">Yume Unlimited</h1>
-          <p class="hero-copy">
-            We build games for PC and help teams turn ambitious concepts into playable prototypes,
-            production-ready systems, and stronger development plans.
-          </p>
-          <div class="hero-actions" aria-label="Primary actions">
-            <a class="button primary" href="#contact">Discuss a project</a>
-            <a class="button secondary" href="#services">Explore services</a>
+        <div id="games" class="games-label">
+          <h2>Our Games</h2>
+          <span>わたしたちのゲーム</span>
+        </div>
+        <div class="games-grid">
+          <article class="game-card game-card--feature">
+            <div class="media">
+              <img src="assets/burger-keyart.jpg" alt="" width="1438" height="810" decoding="async">
+              <span class="pill pill--dev"><span class="dot"></span><span>In development</span></span>
+            </div>
+            <div class="body">
+              <div class="kicker">Original title · Developed &amp; published by Yume Unlimited</div>
+              <h3><a href="#burger-factory">Burger Factory Simulator</a></h3>
+              <p>Start with a spatula. End with a factory. Grow a tiny burger joint where you flip every patty by hand into a fully automated burger factory.</p>
+              <div class="actions">
+                <a href="https://store.steampowered.com/app/4966970/Burger_Factory_Simulator/" target="_blank" rel="noopener" class="btn btn--grad">
+                  <svg aria-hidden="true"><use href="#i-steam"/></svg><span>Add to Wishlist</span>
+                </a>
+                <a href="#burger-factory" class="btn btn--ghost">Learn more</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="game-card">
+            <div class="media">
+              <img src="assets/bookshop-keyart.jpg" alt="" width="1232" height="706" decoding="async">
+              <span class="pill pill--partner">Co-development · Out now</span>
+            </div>
+            <div class="body">
+              <div class="kicker">Co-developed title · with Blep Games</div>
+              <h3><a href="#bookshop">Bookshop Simulator</a></h3>
+              <p>Order books, stock your shelves and grow a cozy bookshop of your very own. Co-developed with Blep Games.</p>
+              <div class="actions">
+                <a href="https://store.steampowered.com/app/3467040/Bookshop_Simulator/" target="_blank" rel="noopener" class="btn btn--ghost">
+                  <svg aria-hidden="true"><use href="#i-steam"/></svg><span>View on Steam</span>
+                </a>
+                <a href="#bookshop" class="btn btn--ghost">Learn more</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- BURGER FACTORY SIMULATOR — in development -->
+    <section id="burger-factory" class="bf">
+      <div class="container">
+        <div class="bf-intro">
+          <div class="reveal">
+            <div class="eyebrow">IN DEVELOPMENT <span class="pill pill--dev"><span class="dot"></span><span>Coming soon</span></span></div>
+            <h2 class="bf-title">Burger Factory<br>Simulator</h2>
+            <p class="bf-tagline">Start with a spatula.<br>End with a factory.</p>
+            <p class="bf-desc">Run a burger shop and grow it from hand-flipped patties to a fully automated kitchen packed with conveyor belts, item grabbers and automatic grills. An original title, designed, developed and published by Yume Unlimited.</p>
+            <div class="bf-ctas">
+              <a href="https://store.steampowered.com/app/4966970/Burger_Factory_Simulator/" target="_blank" rel="noopener" class="btn btn--red">
+                <svg aria-hidden="true"><use href="#i-steam"/></svg><span>Wishlist on Steam</span>
+              </a>
+              <a href="#bf-steps" class="btn btn--outline-dark">See how it plays ↓</a>
+            </div>
+          </div>
+          <div class="bf-media reveal">
+            <div class="bf-sticker" aria-hidden="true"><small>COMING</small>SOON</div>
+            <div class="video-frame">
+              <video src="assets/burger-automation.mp4" poster="assets/burger-automation-poster.jpg" muted loop playsinline autoplay preload="metadata" aria-label="Gameplay footage: burgers carried along a conveyor belt"></video>
+              <span class="video-tag">In-development footage</span>
+            </div>
           </div>
         </div>
-      </section>
 
-      <section class="section intro" aria-label="Company introduction">
-        <div class="section-grid">
+        <div id="bf-steps" class="bf-steps-head reveal">
+          <div class="eyebrow">HOW IT PLAYS</div>
+          <h3 class="bf-h3">From spatula to factory.</h3>
+        </div>
+        <div class="belt-wrap" aria-hidden="true">
+          <div class="belt"></div>
+          <div class="belt-stops"><span>01</span><span>02</span><span>03</span></div>
+        </div>
+        <div class="bf-steps">
+          <article class="step-card reveal">
+            <button class="shot" type="button" data-full="assets/burger-ss1.jpg"><img src="assets/burger-ss1.jpg" alt="Grilling patties behind the counter" width="1280" height="720" loading="lazy" decoding="async"></button>
+            <div class="step-no">STEP 01</div>
+            <h4>Cook by hand</h4>
+            <p>Grill burgers, fry potatoes and pour drinks. Serving customers, washing dishes — at first, it’s all on you.</p>
+          </article>
+          <article class="step-card reveal">
+            <button class="shot" type="button" data-full="assets/burger-ss5.jpg"><img src="assets/burger-ss5.jpg" alt="A conveyor belt carrying a burger to the dining area" width="1280" height="720" loading="lazy" decoding="async"></button>
+            <div class="step-no">STEP 02</div>
+            <h4>Let the machines work</h4>
+            <p>Reinvest your earnings in automatic grills, item grabbers, dishwashers and conveyor belts.</p>
+          </article>
+          <article class="step-card reveal">
+            <button class="shot" type="button" data-full="assets/burger-ss3.jpg"><img src="assets/burger-ss3.jpg" alt="A fully automated burger factory lined with conveyor belts" width="1280" height="720" loading="lazy" decoding="async"></button>
+            <div class="step-no">STEP 03</div>
+            <h4>Build the factory</h4>
+            <p>Route the flow with splitters and scale a one-person kitchen into a fully autonomous burger factory.</p>
+          </article>
+        </div>
+
+        <div class="bf-duo">
+          <article class="duo-card reveal">
+            <div>
+              <div class="label">BLUEPRINT VIEW</div>
+              <h4>Plan it from above</h4>
+              <p>Switch to Blueprint View to rearrange your restaurant. Move and rotate equipment, redesign your layout and plan out the perfect automation line.</p>
+            </div>
+            <video src="assets/burger-blueprint.mp4" poster="assets/burger-blueprint-poster.jpg" muted loop playsinline autoplay preload="metadata" aria-label="Placing equipment in Blueprint View"></video>
+          </article>
+          <article class="duo-card reveal">
+            <div>
+              <div class="label">CUSTOMIZE</div>
+              <h4>Make it yours</h4>
+              <p>Floors, tables, chairs, booths, lights, conveyor belts, even the entrance — design the burger shop of your dreams.</p>
+            </div>
+            <div class="duo-shots">
+              <button class="shot" type="button" data-full="assets/burger-ss2.jpg"><img src="assets/burger-ss2.jpg" alt="A dining room with mint-green booths" width="1280" height="720" loading="lazy" decoding="async"></button>
+              <div class="stack">
+                <button class="shot" type="button" data-full="assets/burger-ss6.jpg"><img src="assets/burger-ss6.jpg" alt="A dining room styled with yellow chairs" width="1280" height="720" loading="lazy" decoding="async"></button>
+                <button class="shot" type="button" data-full="assets/burger-ss4.jpg"><img src="assets/burger-ss4.jpg" alt="The Burger Factory storefront with red awnings" width="1280" height="720" loading="lazy" decoding="async"></button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="bf-launch reveal">
           <div>
-            <p class="section-kicker">What we do</p>
-            <h2>Playable ideas, built with production discipline.</h2>
+            <h3><span class="phrase">Add it to your wishlist</span> <span class="phrase">and be first in line.</span></h3>
+            <p class="note">Steam will let you know the moment the game launches.</p>
+            <a href="https://store.steampowered.com/app/4966970/Burger_Factory_Simulator/" target="_blank" rel="noopener" class="btn btn--white">
+              <svg aria-hidden="true"><use href="#i-steam"/></svg><span>Wishlist on Steam</span>
+            </a>
           </div>
-          <p>
-            Yume Unlimited supports original PC game development, early-stage prototypes, and studios that
-            need experienced consulting around scope, systems, pipelines, and production decisions. We keep
-            the work focused on what players can feel on screen.
-          </p>
-        </div>
-      </section>
-
-      <section class="section services" id="services" aria-labelledby="services-title">
-        <div class="section-heading">
-          <p class="section-kicker">Services</p>
-          <h2 id="services-title">Support for the parts of game development that decide momentum.</h2>
-        </div>
-
-        <div class="service-grid">
-          <article class="service-card">
-            <span class="service-icon" aria-hidden="true">01</span>
-            <h3>PC Game Development</h3>
-            <p>
-              Design and implementation support for PC titles, gameplay systems, tools, UI, content
-              pipelines, and build-ready features.
-            </p>
-          </article>
-
-          <article class="service-card">
-            <span class="service-icon" aria-hidden="true">02</span>
-            <h3>Prototypes &amp; Vertical Slices</h3>
-            <p>
-              Fast, focused playable builds that test feel, technical risk, production scope, and investor
-              or publisher-readiness.
-            </p>
-          </article>
-
-          <article class="service-card">
-            <span class="service-icon" aria-hidden="true">03</span>
-            <h3>Game Consulting</h3>
-            <p>
-              Production planning, feature scoping, technical reviews, team workflows, and practical advice
-              for studios building on PC.
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <section class="feature-band" id="approach" aria-labelledby="approach-title">
-        <div class="feature-inner">
-          <div>
-            <p class="section-kicker">Approach</p>
-            <h2 id="approach-title">A clear process for playable progress.</h2>
-          </div>
-          <div class="process-list">
-            <article>
-              <h3>Prototype</h3>
-              <p>Find the core loop, prove the feel, and expose the biggest risks early.</p>
-            </article>
-            <article>
-              <h3>Produce</h3>
-              <p>Turn the plan into systems, content workflows, implementation milestones, and testable builds.</p>
-            </article>
-            <article>
-              <h3>Polish</h3>
-              <p>Improve clarity, performance, usability, and the details that make a game feel intentional.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section class="section company" id="company" aria-labelledby="company-title">
-        <div class="section-heading">
-          <p class="section-kicker">Company</p>
-          <h2 id="company-title">Built for teams chasing the moment a game starts to feel alive.</h2>
-        </div>
-
-        <div class="company-panel">
-          <dl>
-            <div>
-              <dt>Company</dt>
-              <dd>Yume Unlimited</dd>
-            </div>
-            <div>
-              <dt>Work</dt>
-              <dd>Game development and consulting</dd>
-            </div>
-            <div>
-              <dt>Focus</dt>
-              <dd>PC game development, playable prototypes, and consulting</dd>
-            </div>
-            <div>
-              <dt>Base</dt>
-              <dd>Japan</dd>
-            </div>
+          <dl class="launch-meta">
+            <div><dt>Release date</dt><dd class="big">Coming soon</dd></div>
+            <div><dt>Platform</dt><dd>PC (Steam)</dd></div>
+            <div><dt>Genre</dt><dd>Management sim · Automation</dd></div>
+            <div><dt>Languages</dt><dd>9 languages, incl. English &amp; Japanese</dd></div>
+            <div><dt>Developer &amp; publisher</dt><dd>Yume Unlimited</dd></div>
           </dl>
-          <p>
-            “Yume” means dream. Our work is about giving game ideas the structure, craft, and technical
-            confidence they need to become something players can actually experience.
-          </p>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="contact-section" id="contact" aria-labelledby="contact-title">
-        <div class="contact-inner">
-          <div>
-            <p class="section-kicker">Contact</p>
-            <h2 id="contact-title">Tell us about the game you want to make.</h2>
-            <p>
-              Send a short note with your concept, current stage, target platform, and the kind of support
-              you need.
-            </p>
+    <!-- BOOKSHOP SIMULATOR — co-development -->
+    <section id="bookshop" class="bs">
+      <div class="container">
+        <div class="bs-grid">
+          <div class="bs-art reveal">
+            <img src="assets/bookshop-keyart.jpg" alt="Bookshop Simulator key art" width="1232" height="706" loading="lazy" decoding="async">
+            <span class="collab-plate">Blep Games <span class="x">×</span> Yume Unlimited</span>
           </div>
-
-          <form class="contact-form" data-contact-form>
-            <label>
-              <span>Name</span>
-              <input name="name" type="text" autocomplete="name" required>
-            </label>
-            <label>
-              <span>Email</span>
-              <input name="email" type="email" autocomplete="email" required>
-            </label>
-            <label>
-              <span>Project type</span>
-              <select name="projectType" required>
-                <option value="">Select one</option>
-                <option>Original PC game development</option>
-                <option>Prototype or vertical slice</option>
-                <option>Consulting or production support</option>
-                <option>Technical review</option>
-              </select>
-            </label>
-            <label>
-              <span>Message</span>
-              <textarea name="message" rows="5" required></textarea>
-            </label>
-            <button class="button primary" type="submit">Create email</button>
-          </form>
+          <div class="reveal">
+            <div class="eyebrow">CO-DEVELOPMENT <span class="pill pill--partner">Out now</span></div>
+            <h2 class="bs-title">Bookshop Simulator</h2>
+            <p class="bs-desc">Open your own bookshop. Order books, stock your shelves and use the profits to decorate and expand. Hire staff, collect rare books with powerful abilities, adopt a cat — and grow your business into shops around the world.</p>
+            <dl class="credits">
+              <div><dt>Developer &amp; publisher</dt><dd>Blep Games</dd></div>
+              <div><dt>Co-development</dt><dd class="us">Yume Unlimited</dd></div>
+            </dl>
+            <a href="https://store.steampowered.com/app/3467040/Bookshop_Simulator/" target="_blank" rel="noopener" class="btn btn--gold">
+              <svg aria-hidden="true"><use href="#i-steam"/></svg><span>View on Steam</span>
+            </a>
+          </div>
         </div>
-      </section>
-    </main>
 
-    <footer class="site-footer">
-      <p>&copy; <span data-year></span> Yume Unlimited. All rights reserved.</p>
-      <a href="#top">Back to top</a>
-    </footer>
+        <div class="bs-stats reveal">
+          <div class="stat">
+            <div class="k">Full release</div>
+            <div class="v">Jul 20, 2026</div>
+            <div class="s">Early access from Sep 16, 2025</div>
+          </div>
+          <div class="stat">
+            <div class="k">Steam user reviews</div>
+            <div class="v gold">92<small>%</small></div>
+            <div class="s">Very Positive (1,558 reviews)</div>
+          </div>
+          <div class="stat">
+            <div class="k">Languages</div>
+            <div class="v">11</div>
+            <div class="s">Including English &amp; Japanese</div>
+          </div>
+        </div>
+        <p class="bs-asof">* Review figures as shown on the Steam store on October 26, 2026.</p>
 
-    <script src="script.js"></script>
-  </body>
+        <div class="bs-shots">
+          <button class="shot reveal" type="button" data-full="assets/bookshop-ss1.jpg"><img src="assets/bookshop-ss1.jpg" alt="Customers lining up at the bookshop register" width="1280" height="720" loading="lazy" decoding="async"></button>
+          <button class="shot reveal" type="button" data-full="assets/bookshop-ss2.jpg"><img src="assets/bookshop-ss2.jpg" alt="Stocking books on the shelves" width="1280" height="720" loading="lazy" decoding="async"></button>
+          <button class="shot reveal" type="button" data-full="assets/bookshop-ss3.jpg"><img src="assets/bookshop-ss3.jpg" alt="Inside the bookshop" width="1280" height="720" loading="lazy" decoding="async"></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- STUDIO + ABOUT -->
+    <section id="studio" class="studio">
+      <div class="container">
+        <div class="studio-grid">
+          <div class="reveal">
+            <div class="eyebrow">STUDIO</div>
+            <h2>Dreams,<br>made playable.</h2>
+            <p class="studio-lead">Yume Unlimited is a small PC game studio. Alongside our own original titles, we team up with partner studios on co-development. Whatever we make, the goal is the same: games that make someone’s day a little more fun.</p>
+          </div>
+          <div class="ways reveal">
+            <a class="way" href="#burger-factory">
+              <img src="assets/burger-ss4.jpg" alt="" loading="lazy" decoding="async">
+              <div>
+                <div class="tag">ORIGINAL TITLES</div>
+                <h3>Our own games</h3>
+                <p>From concept to development to release — the games we truly want to play, made with our own hands.</p>
+                <div class="game">In development: <b>Burger Factory Simulator</b></div>
+              </div>
+            </a>
+            <a class="way" href="#bookshop">
+              <img src="assets/bookshop-ss2.jpg" alt="" loading="lazy" decoding="async">
+              <div>
+                <div class="tag">CO-DEVELOPMENT</div>
+                <h3>Co-development</h3>
+                <p>We join forces with partner studios and build a game together, as one team.</p>
+                <div class="game">Out now: <b>Bookshop Simulator</b> (Blep Games)</div>
+              </div>
+            </a>
+            <div class="partner-cta">
+              <p>Looking for a co-development partner? We’d love to hear from you.</p>
+              <a href="#contact">Get in touch →</a>
+            </div>
+          </div>
+        </div>
+
+        <div id="about" class="reveal">
+          <div class="about-head"><h3>Company</h3><span>会社概要</span></div>
+          <div class="about-table">
+            <div class="about-row"><span class="row-label">Company name</span><span class="row-value">Yume Unlimited（株式会社ユメ・アンリミテッド）</span></div>
+            <div class="about-row"><span class="row-label">Founded</span><span class="row-value">2026</span></div>
+            <div class="about-row"><span class="row-label">Email</span><span class="row-value"><a href="mailto:yumeunlimited@gmail.com">yumeunlimited@gmail.com</a></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+      <div class="contact-wrap">
+        <div class="eyebrow">CONTACT</div>
+        <h2>Get in touch</h2>
+        <p class="contact-intro">Co-development, press, or questions about our games —<br>we’d love to hear from you.</p>
+        <form class="contact-form" onsubmit="handleSubmit(event)">
+          <div class="form-field">
+            <label for="cf-name"><span>Name</span><span class="req">Required</span></label>
+            <input id="cf-name" name="name" type="text" required placeholder="Jane Smith" autocomplete="name">
+          </div>
+          <div class="form-field">
+            <label for="cf-email"><span>Email</span><span class="req">Required</span></label>
+            <input id="cf-email" name="email" type="email" required placeholder="example@email.com" autocomplete="email">
+          </div>
+          <div class="form-field full">
+            <label for="cf-type">Inquiry type</label>
+            <select id="cf-type" name="type">
+              <option value="partner">Co-development / business</option>
+              <option value="press">Press / media</option>
+              <option value="games">About our games</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-field full">
+            <label for="cf-message"><span>Message</span><span class="req">Required</span></label>
+            <textarea id="cf-message" name="message" required rows="5" placeholder="How can we help?"></textarea>
+          </div>
+          <button type="submit" class="btn btn--grad">Send (opens your email app)</button>
+          <p class="form-note">Pressing send opens your email app.<br>Or email us directly: <a href="mailto:yumeunlimited@gmail.com">yumeunlimited@gmail.com</a></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <a href="#top" class="logo-link"><img src="assets/yume-logo-ondark.png" alt="Yume Unlimited" width="279" height="56" loading="lazy" decoding="async"></a>
+      <nav class="footer-nav">
+        <a href="#burger-factory">Burger Factory Simulator</a>
+        <a href="#bookshop">Bookshop Simulator</a>
+        <a href="#studio">Studio</a>
+        <a href="#contact">Contact</a>
+        <a href="ja/" hreflang="ja" lang="ja">日本語</a>
+      </nav>
+    </div>
+    <div class="footer-copy">
+      <span>© 2026 Yume Unlimited. All rights reserved.</span>
+      <span>Bookshop Simulator © Blep Games</span>
+    </div>
+  </footer>
+
+  <dialog class="lightbox" aria-label="Screenshot">
+    <button type="button" aria-label="Close">×</button>
+    <img src="" alt="">
+  </dialog>
+
+  <script src="script.js"></script>
+
+</body>
 </html>
